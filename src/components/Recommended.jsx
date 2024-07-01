@@ -60,7 +60,7 @@ export default function Recommended() {
         };
 
         getBookmarks();
-    }, []);
+    }, [bookmarks]);
 
     // Handle mouse enter event for bookmark icon
     const handleBookmarkEnter = (index) => {
