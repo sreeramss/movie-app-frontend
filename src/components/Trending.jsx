@@ -69,16 +69,17 @@ function Trending() {
     };
 
     getBookmarks();
-  }, [bookmarks]);
+  }, []);
   const settings = {
     infinite: true,
     speed: 900,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    // centerMode: true,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    centerMode: false,
     initialSlide: 0,
     pauseOnHover: true,
     autoplay: true,
+    autoplaySpeed: 2200,
     responsive: [
       {
         breakpoint: 1400,
@@ -86,7 +87,7 @@ function Trending() {
           slidesToShow: 4,
           slidesToScroll: 2,
           infinite: true,
-          arrows: false,
+          arrows: true,
           variableWidth: false,
           adaptiveHeight: true,
         },
@@ -100,6 +101,7 @@ function Trending() {
           arrows: false,
           variableWidth: false,
           adaptiveHeight: true,
+          
         },
       },
       {
@@ -107,7 +109,7 @@ function Trending() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          initialSlide: 0,
           arrows: false,
           variableWidth: false,
           adaptiveHeight: false,
@@ -115,13 +117,15 @@ function Trending() {
       },
       {
         breakpoint: 480,
-        settings: {
-          slidesToShow: 1.3,
-          slidesToScroll: 1,
-          arrows: false,
-          variableWidth: false,
-          adaptiveHeight: true,
-        },
+      settings: {
+        slidesToShow:0.9,
+        slidesToScroll:1,
+        centerMode:true,
+        initialSlide: 0,
+        arrows: false,
+        variableWidth: false,
+        adaptiveHeight: true,
+        autoplaySpeed: 1300},
       },
     ],
   };
@@ -183,7 +187,7 @@ function Trending() {
   };
 
   return (
-    <div className=" relative md:py-8 App container mx-auto lg:pl-2 outline-none md:ml-20 lg:ml-36 lg:-mt-8">
+    <div className=" relative -mt-10 md:py-8  lg:pl-2 outline-none md:ml-20 lg:ml-36 lg:-mt-8">
       <h1 className="lg:text-3xl text-2xl m-6 lg:m-3 md:-ml-8 lg:mb-6 lg:-ml-9 font-extralight">
         Trending
       </h1>
