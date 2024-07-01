@@ -29,10 +29,9 @@ body {
 }
 
 .carousel-container {
-  width: 105%;
+  width: 100%;
   margin: auto;
-  padding-left: 10px;
-  
+  padding-left: 2px;
 }
 
 .carousel-container img {
