@@ -57,7 +57,7 @@ const SearchResults = ({ type, query }) => {
     };
 
     getBookmarks();
-  }, []); // Depend on bookmarks state change
+  }, [bookmarks]); // Depend on bookmarks state change
 
   // Fetch more results when pagination changes
   useEffect(() => {
