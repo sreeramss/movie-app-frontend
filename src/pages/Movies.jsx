@@ -118,7 +118,7 @@ export default function Movies() {
   return (
     <div>
       <Layout placeholder="Search for Movies..." type="movie" />
-      <h1 className="lg:text-3xl text-2xl m-6 mt-14 lg:mt-8 md:ml-12 lg:m-3 lg:mb-6 lg:ml-28 font-extralight">
+      <h1 className="lg:text-3xl text-2xl m-6 -mt-10 md:ml-12 md:-mt-10 lg:m-3 lg:mb-6 lg:ml-28 font-extralight">
         Movies
       </h1>
       <div className="m-4 mr-1 md:ml-12 md:-mr-10 lg:ml-28 lg:mr-10 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5">
