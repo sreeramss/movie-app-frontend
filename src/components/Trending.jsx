@@ -69,7 +69,7 @@ function Trending() {
     };
 
     getBookmarks();
-  }, []);
+  }, [bookmarks]);
   const settings = {
     infinite: true,
     speed: 900,
