@@ -5,7 +5,6 @@ let API;
 
 export const initializeAPI = () => {
     const token = localStorage.getItem("token");
-    console.log(token);
     const defaultOptions = {
         baseURL: 'https://movie-app-backend-oqma.onrender.com',
         headers: {
